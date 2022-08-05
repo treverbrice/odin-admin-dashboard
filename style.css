@@ -26,6 +26,37 @@ nav h1 {
 
 header {
     background-color: azure;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 5px;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#searchBar {
+    width: 40vw;
+    background-color: silver;
+    border-style: none;
+    border-radius: 10px;
+}
+
+header h3 {
+    margin: 0;
+}
+
+header button {
+    background-color: cornflowerblue;
+    border-radius: 14px;
+    border-style: none;
+    color: white;
+    padding: 4px 12px;
+    margin-left: 4px;
 }
 
 .mainContent {
