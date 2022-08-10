@@ -54,7 +54,7 @@ nav img {
 }
 
 header {
-    background-color: azure;
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 2fr;
     padding: 5px;
@@ -83,21 +83,22 @@ header button {
     background-color: cornflowerblue;
     border-radius: 14px;
     border-style: none;
-    color: white;
     padding: 4px 12px;
     margin-left: 4px;
 }
 
 .mainContent {
-    background-color: gainsboro;
+    background-color: #dddde9;
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
 .projects {
     display: grid;
-    grid-template-rows: 2rem repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 2rem repeat(3, minmax(150px, 1fr));
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0 16px 16px;
 }
 
 .projects h5 {
@@ -108,3 +109,38 @@ header button {
 .sideCard {
     background-color: white;
 }
+
+.card {
+    border-left: 4px solid orange;
+    border-radius: 4px;
+    padding: 8px;
+    position: relative;
+}
+
+.card h5 {
+    margin: 8px 0 4px;
+}
+
+.card p {
+    overflow: hidden;
+    max-height: 60%;
+    margin: 0;
+    color: grey;
+    font-size: 14px;
+}
+
+.card img {
+    width: 20px;
+    margin: 0 2px;
+}
+
+.imgBar {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.sideCard h6 {
+    margin: 0;
+}
+
