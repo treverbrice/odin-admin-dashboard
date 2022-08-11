@@ -57,7 +57,7 @@ header {
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 header > div {
@@ -65,7 +65,14 @@ header > div {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     margin-right: 10px;
+}
+
+.topRow > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 #searchBar {
@@ -73,6 +80,21 @@ header > div {
     background-color: silver;
     border-style: none;
     border-radius: 10px;
+}
+
+.topRow img {
+    width: 20px;
+}
+
+.topRow .profilePicture {
+    width: 30px;
+}
+
+.bottomRow > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
 }
 
 header h3 {
