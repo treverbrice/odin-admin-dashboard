@@ -125,6 +125,7 @@ header button {
 
 .projects h5 {
     grid-column: 1 / 3;
+    margin-top: 1.5rem;
 }
 
 .card,
@@ -162,7 +163,52 @@ header button {
     bottom: 10px;
 }
 
+.sideBar {
+    margin-right: 20px;
+}
+
+.sideBar h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    height: calc(0.5rem + 16px);
+}
+
+.sideCard {
+    padding: 8px;
+    border-radius: 4px;
+}
+
 .sideCard h6 {
     margin: 0;
 }
 
+.sideCard p,
+.sideCard span {
+    font-size: 14px;
+    color: grey;
+}
+
+.sideCard p {
+    margin: 0;
+}
+
+.sideArticle {
+    margin: 10px 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.sideArticle:last-of-type {
+    border-bottom: none;
+}
+
+.trending img {
+    height: 30px;
+}
+
+.trending .sideCard > div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: 10px 0;
+}
